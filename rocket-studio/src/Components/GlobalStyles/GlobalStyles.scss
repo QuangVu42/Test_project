@@ -1,0 +1,77 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+/* -------------------------------- settings --------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.5;
+    font-size: 1.6rem;
+    text-rendering: optimizeLegibility;
+    font-family: 'Inter', sans-serif;
+}
+input,button{
+    outline: none;
+    border: none;
+}
+a[href]{
+    text-decoration: none;
+}
+ul,li{
+    list-style-type:none;
+    text-transform: capitalize;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+:root{
+    --white: #fff;
+    --yellow: #ff8a00;
+    --yellow-dark : #ff8a00;
+    --black: #000000de;
+    --background-black: #2c2c2c;
+    --background-blur: rgb(28 12 2 / 68%);
+    --background-wrapper: #100601;
+    --background-black-blur:  #000000bd;
+}
+h1{
+    font-size: 5.5rem;
+    text-transform:capitalize;
+    font-weight: 900;
+    @media (max-width:1200px) {
+        font-size: 4rem;
+    }
+    @media (max-width:768px) {
+        font-size: 2rem;
+    }
+}
+p{
+    font-size: 1.7rem;
+    text-transform:capitalize;
+    @media (max-width:1200px) {
+        font-size: 1.5rem;
+    }
+    @media (max-width:768px) {
+        font-size: 1.3rem;
+    }
+}
+#id_remove1{
+    @media (min-width:900px) {
+        display: none;
+    }
+}
+#id_remove2{
+    @media (max-width:899px) {
+        display: none;
+    }
+}
+#link_active{
+    color: var(--yellow-dark);
+}

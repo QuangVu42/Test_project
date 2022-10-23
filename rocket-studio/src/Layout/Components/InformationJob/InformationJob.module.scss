@@ -1,0 +1,65 @@
+.wrapper{
+    background:var(--background-wrapper);
+    padding: 50px 0;
+    .InformationJob{
+        color:var(--white);
+        .box{
+            .grid{
+                .title{
+                    color: var( --yellow-dark);
+                    margin-bottom:30px;
+                }
+                .content{
+                    color: var(--yellow-dark);
+                    font-size:1.5rem;
+                    @media (max-width:768px) {
+                        font-size: 1.3rem;
+                    }
+                }
+                .item{
+                    padding-top: 20px;
+                    .item_title{
+                        padding-bottom: 20px;
+                        font-weight: 900;
+                    }
+                    .item_content{
+                        @media (max-width:768px) {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .btn{
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    color: var(--white);
+                    background: var(--yellow);
+                    padding: 10px 40px;
+                    font-size: 2rem;
+                    border-radius: 0.3125rem;
+                    cursor: pointer;
+                    @media (max-width:768px) {
+                        font-size: 1.3rem;
+                    }
+                }
+                .job_post{
+                    padding: 2rem;
+                    background: var(--background-black);
+                    margin-bottom: 3.2rem ;
+                    border-radius: 0.625rem;
+                    font-size: 1.7rem;
+                    .job_post-title{
+                        margin: 10px 0;
+                    }
+                    .job_post-number{
+                        color: var(--yellow-dark);
+                    }
+                }
+            }
+            .grid_job-post{
+                @media (max-width:1200px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

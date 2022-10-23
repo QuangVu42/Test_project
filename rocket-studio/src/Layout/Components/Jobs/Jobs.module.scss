@@ -1,0 +1,45 @@
+.wrapper{
+    background: var(--background-wrapper);
+    .Jobs{
+        background:url('../../../Assets/Images/jobBG.png');
+        background-repeat: no-repeat;
+        .title{
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+        }
+        .content{
+            padding-bottom: 100px;
+            .box{
+                .grid{
+                    border-top: 1px solid var(--yellow-dark);
+                    border-bottom: 1px solid var(--yellow-dark);
+                    color: var(--yellow-dark);
+                    font-size: 2.3rem;
+                    padding: 10px 0;
+                    @media (max-width:768px) {
+                        font-size: 1.5rem;
+                    }
+                    @media (max-width:400px) {
+                        font-size: 1rem;
+                    }
+                    .content{
+                        font-weight: 900;
+                        padding: 0 40px;
+                        @media (max-width:768px) {
+                           padding-right: 20px;
+                           padding-left: 0;
+                        }
+                    }
+                    .number{
+                        color: var(--white)
+                    }
+                    .span{
+                        cursor: pointer;
+                        color: var(--yellow-dark);
+                    }
+                }
+            }
+        }
+    }
+}

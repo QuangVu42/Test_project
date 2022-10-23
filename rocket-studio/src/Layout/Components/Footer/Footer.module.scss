@@ -1,0 +1,64 @@
+.wrapper{
+    background: var(--background-black);
+    padding: 50px 0;
+    .Footer{
+        .box{
+            .grid{
+                .img{
+                    max-width: 60%;
+                    width: 135px;
+                    height: 135px;
+                }
+                .content{
+                    .item{
+                        margin: 10px 0;
+                        color: var(--white);
+                        a{
+                            color: var(--white);
+                            font-size: 1.7rem;
+                            font-weight: 900;
+                            @media (max-width:768px) {
+                                font-size: 1rem;
+                            }
+                        }
+                        .item_box{
+                            .icon{
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .right{
+                    padding-left: 3rem;
+                    border-left: 1px solid #3d3d3d;
+                    @media (max-width:768px) {
+                        padding-left: 1rem;
+                    }
+                }
+                .grid_content{
+                    display: flex;
+                    .grid_icon{
+                        background: var(--white);
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 15px;
+                        .icon_link{
+                            font-size: 3rem;
+                        }
+                    }
+                    @media (max-width:1200px) {
+                        justify-content: center;
+                        margin-top: 40px;
+                    }
+                }
+            }
+            .icon_link-grid{
+                align-self: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.wrapper{
+    background:var(--background-wrapper);
+    padding: 100px 0;
+    .FormJob{
+        border-top: 1px dotted;
+        color:var(--white);
+        padding: 0 100px;
+        @media (max-width:1200px) {
+            padding: 10px;
+        }
+        .title{
+            color: var(--yellow-dark);
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .form{
+            @media (max-width:768px) {
+                font-size: 1.3rem;
+            }
+            .form_input{
+                margin: 20px 0;
+                label{
+                    font-weight: 900;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    background: var(--black);
+                    color: var(--white);
+                    border: 1px solid var(--white);
+                
+                }
+            }
+            .form_input-file{
+                width: 100%;
+                padding: 10px;
+                background: var(--black);
+                border: 1px  dotted;
+                .file{
+                    width: 100%;
+                    color: transparent;
+                    cursor: pointer; 
+                }
+                .file::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                .file::before {
+                    content: 'CV của bạn*';
+                    display: inline-block;
+                    outline: none;
+                    white-space: nowrap;
+                    -webkit-user-select: none;
+                    cursor: pointer;
+                    display: flex;
+                    place-content: center;
+                    justify-content: center;
+                    color: var(--white);
+                }
+                .file::after{
+                    content: ' Click để chọn & tải lên CV của bạn (chỉ nhận file pdf, tối đa 300MB)';
+                    display: inline-block;
+                    outline: none;
+                    white-space: nowrap;
+                    -webkit-user-select: none;
+                    cursor: pointer;
+                    display: flex;
+                    place-content: center;
+                    justify-content: center;
+                    color: var(--white);
+                }
+            }
+            .submit{
+                width: 100%;
+                padding: 10px;
+                margin: 50px 0;
+                background: var(--yellow-dark);
+                color: var(--white);
+                font-size: 2.5rem;
+                cursor: pointer;
+                border-radius: 0.3125rem;
+                @media (max-width:768px) {
+                    font-size: 2rem;
+                }
+            }
+        }
+        
+    }
+}
